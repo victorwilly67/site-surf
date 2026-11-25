@@ -1,7 +1,7 @@
 body {
     background-color: #f0f8ff;
     color: #1d3557;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
@@ -10,7 +10,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     color: #ffffff;
     text-align: center;
     padding: 130px 40px;
@@ -21,19 +20,117 @@ header h1 {
     font-size: 2.2rem;
 }
 
+header p {
+    text-align: center;
+}
+
 main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-main > h2 {
+main>h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-main > p {
-    text-align: center;
+p {
+    text-align: justify;
     margin-bottom: 30px;
     font-size: 1.1rem;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #213a5e;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #4775a0;
+    transform: scale(1.03);
+}
+
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+
+    section {
+        padding: 15px;
+    }
+}
+
+img{
+    border-radius: 10px;
+}
+
+.prancha{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.prancha:hover{
+    transform: scale(1.02);
+}
+
+#calculadora{
+    background-color: #002244;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+#form-prancha{
+    color: black;
+}
+
+select{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #213a5e;
+    color:#002244;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #002244;
+    padding: 30px;
+    color: white;
+    text-align: center;
 }
